@@ -2,7 +2,7 @@
 
 client_id = "388b7f4cca66b74eb9d078a1fc558dcb"
 name = "mailgun-api"
-application_url = "https://example.com"
+application_url = "https://test.com"
 embedded = true
 
 [build]
@@ -14,7 +14,7 @@ api_version = "2026-04"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://test.com/api/auth" ]
