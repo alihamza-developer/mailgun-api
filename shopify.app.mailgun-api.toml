@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a0b21ad017bc6eb7f88fcd43b0904071"
+name = "mailgun-api"
+application_url = "https://test.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2026-04"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products"
+
+[auth]
+redirect_urls = [ "https://test.com/api/auth" ]
+
+[app_proxy]
+url = "https://app.test.com/api/proxy"
+subpath = "proxy"
+prefix = "apps"
